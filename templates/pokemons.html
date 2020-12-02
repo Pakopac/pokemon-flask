@@ -3,11 +3,13 @@
 {% set active_page = "pokemons" %}
 {% block content %}
 <div class= "container-fluid">
-    <h4>Liste des Pokemons</h4>
+    <h1 class="text-center">Liste des Pokemons</h4>
     <div class= "row d-inline-flex">
 {% for pokemon in pokemons %}
-<div class ="col-4 col-sm-6 col-md-2 p-4">
+<a href="/pokemon/{{pokemon.id}}" class ="col-4 col-sm-6 col-md-2 p-4" style="text-decoration: none; color: black;">
     <div class="card h-100">
+
+        <!-- image du pokemon -->
         {% if pokemon.id < 10 %}
             <img class="card-img-top" src="../static/assets/pokemon_datas/images/00{{pokemon.id}}.png"/>
         {% elif pokemon.id < 100 %}
@@ -15,7 +17,11 @@
         {% else %}
             <img class="card-img-top" src="../static/assets/pokemon_datas/images/{{pokemon.id}}.png"/>
         {% endif %}
+
+        <!-- numéro et nom du pokemon -->
        <h4 class="card-title text-center"> n°{{pokemon.id}} {{pokemon.name.french}}</h4>
+
+        <!-- type(s) du pokemon -->
        <p class="card-text text-center">
            {% for type in pokemon.type %}
                 {% for data_type in types %}
@@ -26,7 +32,7 @@
            {% endfor %}
         </p>
     </div>
- </div>
+</a>
 {% endfor %}
 </div>
 </h4>

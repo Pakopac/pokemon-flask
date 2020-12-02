@@ -1,0 +1,54 @@
+{% extends 'navbar.html' %}
+
+{% set active_page = "pokemons" %}
+{% block content %}
+
+<div class ="col-4 col-sm-6 col-md-2 p-4" style="text-decoration: none; color: black;"></a>
+{% for pokemon in pokemons %}
+{% if pokemon.id == id | int%}
+
+    <!-- image du pokemon -->
+    {% if pokemon.id < 10 %}
+    <img class="card-img-top" src="../static/assets/pokemon_datas/images/00{{pokemon.id}}.png"/>
+    {% elif pokemon.id < 100 %}
+    <img class="card-img-top" src="../static/assets/pokemon_datas/images/0{{pokemon.id}}.png"/>
+    {% else %}
+    <img class="card-img-top" src="../static/assets/pokemon_datas/images/{{pokemon.id}}.png"/>
+    {% endif %}
+
+    <!-- nom du pokemon -->
+    <p class="card-text text-center">
+        {{pokemon.name.french}}
+    </p>
+
+    <!-- type du pokemon -->
+    <p class="card-text text-center">
+        {% for type in pokemon.type %}
+            {% for data_type in types %}
+                {% if data_type.english == type %}
+                    <span style="background: {{data_type.color}}; border-radius:10px; padding:0 5px">{{type}}</span>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </p>
+
+    <!-- stats du pokemon -->
+    <p class="stats card-text text-center">
+        <ul>
+            <li>HP: {{pokemon.base.HP}}</li>
+            <li>Attaque: {{pokemon.base.Attack}}</li>
+            <li>Défense: {{pokemon.base.Defense}}</li>
+            <li>Sp. Attaque: {{pokemon.base["Sp. Attack"]}}</li>
+            <li>Sp. Defense: {{pokemon.base["Sp. Defense"]}}</li>
+            <li>Vitesse: {{pokemon.base.Speed}}</li>
+        </ul>
+    </p>
+
+    <a href="/pokemons">Retour</a>
+
+
+{% endif %}
+{% endfor %}
+</div>
+
+{% endblock %}
