@@ -12,7 +12,7 @@ Elle se compose de quatres pages:
 ## Utilisation
 
 
-Vous pouvez simplement clicker sur ce lien: https://pokemon-flask.herokuapp.com/ si vous voulez tester l'application en production.  
+Vous pouvez simplement cliquer sur ce lien: https://pokemon-flask.herokuapp.com/ si vous voulez tester l'application en production.  
 
 Vous pouvez également récupérer l'application et la lancer en local, il vous faudra donc cloner le dépôt:
 ```
@@ -22,7 +22,7 @@ Rentrez dedans:
 ```
 cd /pokemon-flask
 ```
-puis deux choix s'offrent à vous:
+Puis deux choix s'offrent à vous:
 
 
 ## Simple commande
@@ -30,7 +30,7 @@ Executez la commande:
 ```
 python app.py
 ```
-et rendez-vous sur le lien http://localhost:5000
+Et rendez-vous sur le lien http://localhost:5000
 
 ##  Docker
 
@@ -38,9 +38,9 @@ Pour lancer l'application depuis docker:
 ```
 docker build -t pokemon-flask .
 ``` 
-puis
+Puis
 ```
-docker run -d -p 5000:5000 pokemon-flas
+docker run -d -p 5000:5000 pokemon-flask
 ```
 Rendez-vous enfin sur http://localhost:5000  
-Et tout devrait fonctionner
+Et tout devrait fonctionner !!
