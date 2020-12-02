@@ -26,7 +26,11 @@ Puis deux choix s'offrent à vous:
 
 
 ## Simple commande
-Executez la commande:
+Executez les commandes:
+```
+pip install requirements.txt
+```
+Puis
 ```
 python app.py
 ```
