@@ -1,9 +1,9 @@
 from flask import Flask, render_template
-from flask_flatpages import FlatPages
-from flask_frozen import Freezer
 from jinja2 import Template 
 import json
 import os
+
+port = int(os.environ.get("PORT", 5000))
 
 # json importation
 pokemon_file = "./static/assets/pokemon_datas/pokedex.json"
@@ -34,4 +34,4 @@ def contact():
     return render_template('contact.html')
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0',port=port)
