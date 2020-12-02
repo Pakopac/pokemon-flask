@@ -2,91 +2,109 @@
   {
     "english": "Normal",
     "chinese": "一般",
-    "japanese": "ノーマル"
+    "japanese": "ノーマル",
+    "color": "#A8A77A"
   },
   {
     "english": "Fighting",
     "chinese": "格斗",
-    "japanese": "かくとう"
+    "japanese": "かくとう",
+    "color": "#C22E28"
   },
   {
     "english": "Flying",
     "chinese": "飞行",
-    "japanese": "ひこう"
+    "japanese": "ひこう",
+    "color": "#A98FF3"
   },
   {
     "english": "Poison",
     "chinese": "毒",
-    "japanese": "どく"
+    "japanese": "どく",
+    "color": "#A33EA1"
   },
   {
     "english": "Ground",
     "chinese": "地上",
-    "japanese": "じめん"
+    "japanese": "じめん",
+    "color": "#E2BF65"
   },
   {
     "english": "Rock",
     "chinese": "岩石",
-    "japanese": "いわ"
+    "japanese": "いわ",
+    "color": "#B6A136"
   },
   {
     "english": "Bug",
     "chinese": "虫",
-    "japanese": "むし"
+    "japanese": "むし",
+    "color": "#A6B91A"
   },
   {
     "english": "Ghost",
     "chinese": "幽灵",
-    "japanese": "ゴースト"
+    "japanese": "ゴースト",
+    "color": "#735797"
   },
   {
     "english": "Steel",
     "chinese": "钢",
-    "japanese": "はがね"
+    "japanese": "はがね",
+    "color": "#B7B7CE"
   },
   {
     "english": "Fire",
     "chinese": "炎",
-    "japanese": "ほのお"
+    "japanese": "ほのお",
+    "color": "#EE8130"
   },
   {
     "english": "Water",
     "chinese": "水",
-    "japanese": "みず"
+    "japanese": "みず",
+    "color": "#6390F0"
   },
   {
     "english": "Grass",
     "chinese": "草",
-    "japanese": "くさ"
+    "japanese": "くさ",
+    "color": "#7AC74C"
   },
   {
     "english": "Electric",
     "chinese": "电",
-    "japanese": "でんき"
+    "japanese": "でんき",
+    "color": "#F7D02C"
   },
   {
     "english": "Psychic",
     "chinese": "超能",
-    "japanese": "エスパー"
+    "japanese": "エスパー",
+    "color": "#F95587"
   },
   {
     "english": "Ice",
     "chinese": "冰",
-    "japanese": "こおり"
+    "japanese": "こおり",
+    "color": "#96D9D6"
   },
   {
     "english": "Dragon",
     "chinese": "龙",
-    "japanese": "ドラゴン"
+    "japanese": "ドラゴン",
+    "color": "#6F35FC"
   },
   {
     "english": "Dark",
     "chinese": "恶",
-    "japanese": "あく"
+    "japanese": "あく",
+    "color": "#705746"
   },
   {
     "english": "Fairy",
     "chinese": "妖精",
-    "japanese": "フェアリー"
+    "japanese": "フェアリー",
+    "color": "#D685AD"
   }
 ]
